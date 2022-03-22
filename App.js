@@ -46,7 +46,7 @@ export default function App() {
 				alert('לא הצלחנו לשמור את המם. נסו ללכת להגדרות ולתת הרשאות לאפליקציה');
 			}
 		} else {
-			alert(JSON.stringify(permission));
+			alert('איך נשמור מם בלי הרשאות אבאלה?');
 		}
 	};
 	return (
@@ -57,7 +57,7 @@ export default function App() {
 				style={{ flex: 1, flexGrow: 1, marginTop: 40 }}
 				injectedJavaScriptBeforeContentLoaded={`
                      
-                     window.isWebView = true;
+                     window.isWebviewBasedApp = true;
                      
                        
                      `}
